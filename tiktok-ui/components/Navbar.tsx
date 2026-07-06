@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 
 const links = [
-  { href: "/", label: "Home", icon: "🏠" },
+  { href: "/", label: "Home", icon: "🏚" },
   { href: "/search", label: "Search", icon: "🔍" },
   { href: "/notifications", label: "Alerts", icon: "🔔" },
   { href: "/messages", label: "Messages", icon: "💬" },
-  { href: "/profile", label: "Profile", icon: "👤" },
+  { href: "/profile", label: "Profile", icon: "🧑" },
   { href: "/settings", label: "Settings", icon: "⚙️" },
 ];
 
@@ -21,7 +21,7 @@ export default function Navbar() {
       {/* Desktop / tablet top navbar */}
       <nav className="hidden md:flex items-center justify-between px-6 py-3 border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md sticky top-0 z-40">
         <Link href="/" className="text-xl font-bold bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent">
-          Pulse
+          Frolic
         </Link>
         <div className="flex items-center gap-1">
           {links.map((link) => (

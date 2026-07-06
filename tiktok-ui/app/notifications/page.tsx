@@ -44,7 +44,7 @@ export default function NotificationsPage() {
       {notifications.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-center">
           <div className="text-4xl mb-3">🔔</div>
-          <h2 className="font-semibold mb-1">You're all caught up</h2>
+          <h2 className="font-semibold mb-1"> All caught up</h2>
           <p className="text-sm text-zinc-500">New notifications will show up here.</p>
         </div>
       ) : (

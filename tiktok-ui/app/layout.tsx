@@ -4,7 +4,7 @@ import { ThemeProvider } from "./providers";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Pulse — Social",
+  title: "Frolic : Enjoy Yourself",
   description: "A TikTok-style social feed UI",
 };
 
