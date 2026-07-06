@@ -61,7 +61,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3 mb-3">
                   <Avatar name={user.name} online={user.online} />
                   <div>
-                    <p className="font-semibold text-sm">{user.name}</p>
+                    <p className="font-semibold text-sm text-zinc-900 dark:text-zinc-50">{user.name}</p>
                     <p className="text-xs text-zinc-500">
                       @{user.username} · {post.timestamp}
                     </p>
@@ -72,7 +72,7 @@ export default function HomePage() {
                   Video preview
                 </div>
 
-                <p className="text-sm mb-3">{post.caption}</p>
+                <p className="text-sm mb-3 text-zinc-900 dark:text-zinc-50">{post.caption}</p>
 
                 <div className="flex items-center gap-2">
                   <Button
@@ -90,7 +90,7 @@ export default function HomePage() {
                     size="sm"
                     onClick={() => toggleSave(post.id)}
                   >
-                    {post.saved ? "🔖 Saved" : "🔖 Save"}
+                    {post.saved ? "🔖 Saved" : "🏷 Save"}
                   </Button>
                   <Button variant="ghost" size="sm" onClick={() => handleShare(post.id)}>
                     ↗️ Share

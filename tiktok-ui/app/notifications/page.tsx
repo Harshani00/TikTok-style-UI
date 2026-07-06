@@ -35,9 +35,14 @@ export default function NotificationsPage() {
           Notifications {unreadCount > 0 && `(${unreadCount})`}
         </h1>
         {unreadCount > 0 && (
-          <Button variant="ghost" size="sm" onClick={markAllAsRead}>
-            Mark all as read
-          </Button>
+        <Button 
+        variant="ghost"  
+        className="!text-zinc-700 dark:!text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800" 
+        size="sm" 
+        onClick={markAllAsRead}
+        >
+  Mark all as read
+</Button>
         )}
       </div>
 
@@ -64,9 +69,9 @@ export default function NotificationsPage() {
               >
                 <Avatar name={user.name} />
                 <div className="flex-1">
-                  <p className="text-sm">
-                    <span className="font-semibold">{user.name}</span> {n.message}
-                  </p>
+                 <p className="text-sm text-zinc-900 dark:text-zinc-50">
+                <span className="font-semibold">{user.name}</span> {n.message}
+                 </p>
                   <p className="text-xs text-zinc-500 mt-0.5">{n.timestamp}</p>
                 </div>
                 <span className="text-lg">{typeIcon[n.type]}</span>

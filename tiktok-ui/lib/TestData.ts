@@ -45,18 +45,18 @@ export interface ChatMessage {
 }
 
 export const mockUsers: User[] = [
-  { id: "u1", name: "Devika Perera", username: "devika.p", bio: "ML & healthcare data enthusiast", followers: 1240, following: 180, online: true },
-  { id: "u2", name: "Kavindu Silva", username: "kavi.codes", bio: "Frontend dev | coffee addict", followers: 890, following: 210, online: true },
-  { id: "u3", name: "Ashen Fernando", username: "ashen_f", bio: "Photographer 📸 traveling the island", followers: 3400, following: 95, online: false },
-  { id: "u4", name: "Nadeesha Rathnayake", username: "nadee.r", bio: "Foodie | recipe sharer", followers: 560, following: 340, online: true },
-  { id: "u5", name: "Tharindu Bandara", username: "tharindu_b", bio: "Music producer 🎧", followers: 2100, following: 150, online: false },
+  { id: "u1", name: "Ann Silva", username: "ann.s", bio: "ML & healthcare data research enthusiast", followers: 1240, following: 180, online: true },
+  { id: "u2", name: "Jhon Doe", username: "jhon.d", bio: "Frontend developer 👨‍🎓", followers: 890, following: 210, online: true },
+  { id: "u3", name: "Rebecca Ross", username: "rebbeca@r", bio: "Photographer 📸 traveling the island", followers: 3400, following: 95, online: false },
+  { id: "u4", name: "Tahereh Mafi", username: "tahereh.m", bio: "Writer", followers: 560, following: 340, online: true },
+  { id: "u5", name: "Alex Franklin", username: "Alex_F", bio: "Singer 🎵", followers: 2100, following: 150, online: false },
 ];
 
 export const currentUser: User = {
   id: "u1",
-  name: "Devika Perera",
-  username: "devika.p",
-  bio: "ML & healthcare data enthusiast | building things with data",
+  name: "Ann Silva",
+  username: "ann.s",
+  bio: "ML & healthcare data research enthusiast | building things with data",
   followers: 1240,
   following: 180,
   online: true,
@@ -65,9 +65,9 @@ export const currentUser: User = {
 export const mockPosts: Post[] = [
   { id: "p1", userId: "u2", caption: "Shipped a new feature today 🚀 feels good", likes: 245, comments: 12, liked: false, saved: false, timestamp: "2h ago" },
   { id: "p2", userId: "u3", caption: "Sunrise over Ella this morning, worth the early wake up 🌄", likes: 892, comments: 45, liked: true, saved: true, timestamp: "5h ago" },
-  { id: "p3", userId: "u4", caption: "Tried making kottu for the first time, verdict: 8/10 👌", likes: 156, comments: 23, liked: false, saved: false, timestamp: "8h ago" },
+  { id: "p3", userId: "u4", caption: "A word after a word after a word is power", likes: 156, comments: 23, liked: false, saved: false, timestamp: "8h ago" },
   { id: "p4", userId: "u5", caption: "New track dropping this Friday, stay tuned 🎵", likes: 430, comments: 67, liked: false, saved: false, timestamp: "1d ago" },
-  { id: "p5", userId: "u2", caption: "Dark mode or light mode? asking for a friend 😄", likes: 78, comments: 34, liked: false, saved: false, timestamp: "1d ago" },
+  { id: "p5", userId: "u2", caption: "Tried making kottu for the first time, verdict: 8/10 👌 😄", likes: 78, comments: 34, liked: false, saved: false, timestamp: "1d ago" },
 ];
 
 export const mockNotifications: Notification[] = [
@@ -90,13 +90,13 @@ export const mockChatHistory: Record<string, ChatMessage[]> = {
     { id: "m2", senderId: "u1", text: "Yep, looks good on my end!", timestamp: "10:05 AM" },
   ],
   u3: [
-    { id: "m3", senderId: "u3", text: "Those photos turned out amazing", timestamp: "9:00 AM" },
+    { id: "m3", senderId: "u3", text: "Those photos turned out amazing 😇", timestamp: "9:00 AM" },
   ],
   u4: [
     { id: "m4", senderId: "u4", text: "Sending the recipe now 🍜", timestamp: "7:45 AM" },
   ],
   u5: [
-    { id: "m5", senderId: "u5", text: "Let me know what you think of the track", timestamp: "Yesterday" },
+    { id: "m5", senderId: "u5", text: "Let me know what you think of the track 🎵", timestamp: "Yesterday" },
   ],
 };
 

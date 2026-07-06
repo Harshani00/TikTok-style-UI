@@ -29,7 +29,7 @@ export default function UserProfilePage() {
     <div>
       <div className="p-6 flex flex-col items-center text-center border-b border-zinc-200 dark:border-zinc-800">
         <Avatar name={user.name} size="xl" online={user.online} />
-        <h1 className="font-semibold text-lg mt-3">{user.name}</h1>
+        <h1 className="font-semibold text-lg mt-3 text-zinc-900 dark:text-zinc-50"></h1>
         <p className="text-sm text-zinc-500">@{user.username}</p>
         <p className="text-sm mt-2 max-w-xs">{user.bio}</p>
 

@@ -39,7 +39,7 @@ export default function SearchPage() {
               <Card className="p-3 flex items-center gap-3 hover:border-primary-400 dark:hover:border-primary-600 transition-colors cursor-pointer">
                 <Avatar name={user.name} online={user.online} />
                 <div className="flex-1">
-                  <p className="font-semibold text-sm">{user.name}</p>
+                  <p className="font-semibold text-sm text-zinc-900 dark:text-zinc-50">{user.name}</p>
                   <p className="text-xs text-zinc-500">@{user.username}</p>
                 </div>
                 <span className="text-xs text-zinc-400">

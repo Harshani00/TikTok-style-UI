@@ -39,7 +39,7 @@ export default function SettingsPage() {
 
       <Card className="p-4 flex items-center justify-between">
         <div>
-          <p className="font-medium text-sm">Theme</p>
+          <p className="font-medium text-sm text-zinc-900 dark:text-zinc-50">Theme</p>
           <p className="text-xs text-zinc-500 mt-0.5">
             Currently using {theme === "dark" ? "dark" : "light"} mode
           </p>
@@ -49,7 +49,7 @@ export default function SettingsPage() {
 
       <Card className="p-4 flex items-center justify-between">
         <div>
-          <p className="font-medium text-sm">Notifications</p>
+          <p className="font-medium text-sm text-zinc-900 dark:text-zinc-50">Notifications</p>
           <p className="text-xs text-zinc-500 mt-0.5">
             Get notified about likes, comments, and follows
           </p>
@@ -66,7 +66,7 @@ export default function SettingsPage() {
       </Card>
 
       <Card className="p-4">
-        <p className="font-medium text-sm mb-2">Language</p>
+        <p className="font-medium text-sm text-zinc-900 dark:text-zinc-50 mb-2">Language</p>
         <div className="flex gap-2 flex-wrap">
           {["English", "Sinhala", "Tamil"].map((lang) => (
             <button

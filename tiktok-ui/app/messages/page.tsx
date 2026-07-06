@@ -68,11 +68,11 @@ export default function MessagesPage() {
             messages.map((m) => (
               <div
                 key={m.id}
-                className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm ${
-                  m.senderId === "u1"
-                    ? "self-end bg-primary-600 text-white"
-                    : "self-start bg-zinc-100 dark:bg-zinc-800"
-                }`}
+               className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm ${
+                m.senderId === "u1"
+              ? "self-end bg-primary-600 text-white"
+             : "self-start bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-50"
+             }`}
               >
                 {m.text}
                 <p
@@ -93,7 +93,7 @@ export default function MessagesPage() {
             onChange={(e) => setDraft(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && sendMessage()}
             placeholder="Type a message..."
-            className="flex-1 px-4 py-2 rounded-full bg-zinc-100 dark:bg-zinc-800 text-sm outline-none focus:ring-2 focus:ring-primary-400"
+            className="flex-1 px-4 py-2 rounded-full bg-zinc-100 dark:bg-zinc-800 text-sm text-zinc-900 dark:text-zinc-50 placeholder:text-zinc-500 outline-none focus:ring-2 focus:ring-primary-400"
           />
           <Button size="sm" onClick={sendMessage} disabled={!draft.trim()}>
             Send
@@ -127,7 +127,7 @@ export default function MessagesPage() {
               >
                 <Avatar name={user.name} online={user.online} />
                 <div className="flex-1">
-                  <p className="font-semibold text-sm">{user.name}</p>
+                  <p className="font-semibold text-sm text-zinc-900 dark:text-zinc-50">{user.name}</p>
                   <p className="text-xs text-zinc-500 truncate max-w-[200px]">
                     {c.lastMessage}
                   </p>
