@@ -39,7 +39,8 @@ export default function MessagesPage() {
     setDraft("");
   }
 
-  // Chat detail view
+  // Chat detail view 
+
   if (activeChat) {
     const user = getUserById(activeChat);
     const messages = chatHistory[activeChat] || [];

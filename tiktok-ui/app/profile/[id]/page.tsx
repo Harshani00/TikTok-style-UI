@@ -1,3 +1,5 @@
+// For viewing other users' profiles
+
 "use client";
 
 import { useState } from "react";
