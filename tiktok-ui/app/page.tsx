@@ -68,8 +68,10 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="w-full h-56 rounded-xl bg-gradient-to-br from-primary-400 to-accent-400 flex items-center justify-center text-white text-sm mb-3">
-                  Video preview
+                <div className="relative w-full h-56 rounded-xl bg-gradient-to-br from-primary-400 to-accent-400 flex flex-col items-center justify-center text-white text-sm mb-3 overflow-hidden">
+                <span className="text-4xl animate-bounce">📷</span>
+                <span className="mt-2">Video preview</span>
+                
                 </div>
 
                 <p className="text-sm mb-3 text-zinc-900 dark:text-zinc-50">{post.caption}</p>
